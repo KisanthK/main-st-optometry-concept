@@ -74,7 +74,29 @@ nav.scrolled .bar {
 .mobile-dropdown.active {
     max-height: 400px; /* Adjust based on content height */
 }
+/* --- 5S Rule: Remove desktop clutter --- */
+/* This ensures the button is HIDDEN on all screens by default */
+.mobile-only-btn {
+    display: none !important;
+}
 
+/* --- Mobile Only Instructions --- */
+@media (max-width: 768px) {
+    /* This makes the button reappear ONLY when the screen is small */
+    .mobile-only-btn {
+        display: flex !important; /* or block */
+        justify-content: center;
+        align-items: center;
+        background-color: #00aeef;
+        color: white !important;
+        width: 85%;
+        padding: 16px;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 174, 239, 0.3);
+    }
+}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { 
@@ -1038,4 +1060,149 @@ nav.scrolled .nav-links li a::after {
 nav.scrolled .mobile-nav-links li a:hover {
     text-decoration: underline;
     text-decoration-color: #ffffff;
+}
+/* --- Optimized Mobile Info Grid --- */
+@media (max-width: 1150px) {
+    /* Keep the grid visible but allow it to wrap */
+    .nav-info-grid { 
+        display: flex !important; 
+        gap: 15px; 
+        margin-right: 15px;
+    }
+
+    /* Adjust text size for smaller screens so it doesn't overlap */
+    .nav-info-text p {
+        font-size: 0.7rem;
+    }
+    
+    .nav-info-text strong {
+        font-size: 0.5rem;
+    }
+
+    /* Ensure the "hide" classes from HTML are overridden */
+    .hide-mobile, .hide-small {
+        display: flex !important;
+    }
+    
+    /* Hide the desktop nav links to make room for the info */
+    .nav-links { 
+        display: none; 
+    }
+}
+
+/* Specific fix for very small phones (Portrait) */
+@media (max-width: 480px) {
+    .nav-info-grid {
+        gap: 10px;
+    }
+    /* Hide the labels (HOURS/LOCATION) to save vertical space, keep icons and data */
+    .nav-info-text strong {
+        display: none;
+    }
+    .nav-logo {
+        height: 35px;
+    }
+}
+@media (max-width: 768px) {
+    /* Stack the buttons vertically like the mobile menu */
+    .hero-btns {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Spacing between the buttons */
+        width: 100%;
+    }
+
+    /* Style the buttons to match the mobile menu blue and white look */
+
+/* 1. Hide the button on Laptops/Desktops by default */
+.mobile-only-btn {
+    display: none !important;
+}
+
+/* 2. Show the button ONLY on Mobile (768px and below) */
+@media (max-width: 768px) {
+    .mobile-only-btn {
+        display: block !important; /* Changes from hidden to visible */
+        width: 80%;
+        text-align: center;
+        background-color: #00aeef;
+        color: white !important;
+        padding: 15px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+ /* --- Professional Desktop Button Styles --- */
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hero-btns a {
+    padding: 14px 28px;
+    border-radius: 50px; /* Modern pill shape is more ergonomic/friendly */
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+/* "Our Services" - Ghost Button Style */
+.hero-btns a[href="#services"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.hero-btns a[href="#services"]:hover {
+    background: white;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* --- Mobile Professional Styles (768px and below) --- */
+@media (max-width: 768px) {
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .hero-btns a {
+        width: 85%; /* Optimal width for thumb-reach ergonomics */
+        padding: 16px;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* The "Book Appointment" button - Visible ONLY on mobile */
+    .mobile-only-btn {
+        display: block !important;
+        background: #00aeef; /* The professional Optometry Blue */
+        color: white !important;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 174, 239, 0.3);
+    }
+
+    /* "Our Services" adjustment for mobile */
+    .hero-btns a[href="#services"] {
+        border: 2px solid #00aeef;
+        color: #00aeef !important;
+        background: transparent;
+    }
+}
+
+/* Hide mobile-only button on Desktop */
+@media (min-width: 769px) {
+    .mobile-only-btn {
+        display: none !important;
+    }
+}   
+    /* Optional: Stack the buttons vertically on mobile for ergonomics */
 }
