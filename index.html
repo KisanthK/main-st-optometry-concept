@@ -3,256 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main St. Optometry | Vision Excellence</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <title>2379 Burlington Army Cadets | Official Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
-<nav id="navbar">
+     <nav id="navbar">
     <div class="nav-container">
-        <a href="index.html" class="logo-container">
-            <img src="images/logo.jpg" alt="Main St. Optometry Logo" class="nav-logo">
-        </a>
+        <a href="index.html" class="nav-brand">2379 <span class="accent">CADETS</span></a>
         
-        <div class="nav-info-grid">
-            <div class="nav-info-item hide-mobile">
-                <span class="nav-icon">🕒</span>
-                <div class="nav-info-text">
-                    <strong>HOURS</strong>
-                    <p>M-F 9:30-5:30</p>
-                </div>
-            </div>
-            <div class="nav-info-item hide-small">
-                <span class="nav-icon">📍</span>
-                <div class="nav-info-text">
-                    <strong>LOCATION</strong>
-                    <p>Newmarket, ON</p>
-                </div>
-            </div>
-            <div class="nav-info-item">
-                <span class="nav-icon">📱</span>
-                <div class="nav-info-text">
-                    <strong>CALL</strong>
-                    <p><a class="phone-link">(905) 898-5245</a></p>
-                </div>
-            </div>
+        <div class="mobile-toggle" id="hammy">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <div class="nav-right-section">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</li>
-                <li><a href="#trends">Clinical Focus</a></li>
-                <li class="nav-cta"><a href="#contact" class="btn-nav">Book Appointments</a></li>
-            </ul>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile-dropdown" id="mobile-dropdown">
-        <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#trends">Clinical Focus</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="Donate.html">Donate</a></li>
+            <li><a href="#join-us" class="btn-nav-tactical">Join Unit</a></li>
         </ul>
     </div>
-</nav>
-    <div class="nav-info-grid">
-    <div class="nav-info-item"> <span class="nav-icon">🕒</span>
-        <div class="nav-info-text">
-            <strong>HOURS</strong>
-            <p>M-F 9:30-5:30</p>
+</nav>       
+    <header class="hero">
+    <img src="images/groupOne.png" alt="2379 Burlington Army Cadets" class="hero-img">
+    <div class="hero-overlay">
+        <div class="hero-content-bottom">
+            <h1 class="hero-title-large">2379  <br><span>Burlington Army Cadets</span></h1>
         </div>
     </div>
-    <div class="nav-info-item"> <span class="nav-icon">📍</span>
-        <div class="nav-info-text">
-            <strong>LOCATION</strong>
-            <p>Newmarket, ON</p>
+</header>
+<section id="join-us" class="recruitment-section">
+    <div class="container">
+        <div class="split-layout">
+            
+            <div class="experience-content">
+                <br>
+                <span class="eyebrow">Welcome a World of Opportunity</span>
+                <h2 class= 'section-heading'> Self Discipline. <br> Leadership <br>Friendship</h2>
+
+                
+                <div class="value-text">
+                    <p>The Army Cadets is a free program  that develops self discipline, leadership and friendship skills in our youth.<strong> We welcome youth between the ages of 12-18 years old to join us.</strong> The program focuses on physical activity and the outdoors and provides opportunities for weekend activities and exceptional volunteer opportunities. </p>
+                </div>
+                <h2>Experiences Include</h2>
+                <div class="activity-chips">
+                    <span class="chip">Wilderness Expeditions</span>
+                    <span class="chip">Survival Training</span>
+                    <span class="chip">Navigation</span>
+                    <span class="chip">Mountain Biking</span>
+                    <span class="chip">Climbing</span>
+                </div>
+            </div>
+
+            <div class="logistics-card">
+                
+                <div class="log-group">
+                    <div class="log-icon">📅</div>
+                    <div class="log-text">
+                        <h3>Training Nights</h3>
+                        <p>Thursday Evenings</p>
+                        <p class="time">18:30 – 21:00</p>
+                    </div>
+                </div>
+
+                <div class="log-group">
+                    <div class="log-icon">📍</div>
+                    <div class="log-text">
+                        <h3>Headquarters</h3>
+                        <p>3230 Fairview Street</p>
+                        <p>Burlington, Ontario</p>
+                    </div>
+                </div>
+
+                <div class="entrance-instruction">
+                    <div class="instruction-header">
+                        <strong>Important Entrance Info:</strong>
+                    </div>
+                    <p>Enter the back parking lot off <strong>Prospect Street</strong>. Take the rear steps located to the left of the loading dock.</p>
+                </div>
+
+                <a href="#contact" class="btn-primary-cta">Register Your Interest</a>
+            </div>
+
         </div>
     </div>
-    </div>
-<section class="hero" id="home">
-    <div class="glass-card main-hero-card">
-        <div class="card-header">
-            <span class="brand-sub">PREMIUM EYE CARE NEWMARKET</span>
+</section>
+
+
+<section id="location" class="map-section"> 
+        <div class="container">
+            <header class="partner-header-premium">
+                <span class="eyebrow-tactical">Mission Command</span>
+                <h2>Our Headquarters</h2>
+                <div class="header-accent"></div>
+                <p>3230 Fairview Street, Burlington, ON.</p>
+            </header>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.56!2d-79.80!3d43.34!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDIwJzI0LjAiTiA3OcKwNDgnMDAuMCJX!5e0!3m2!1sen!2sca!4v123456789" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
-        <h1>Visionary Care. <br><span>Tailored for You.</span></h1>
-        <p>Experience the intersection of advanced clinical diagnostics and artisan eyewear boutique style.</p>
-        
-        <div class="hero-btns">
-    <a href="#services">Our Services</a>
-    <a href="#contact" class="mobile-only-btn">Book Appointment</a>
+    </section>
+
+<section id="resources" class="resource-section">
+    <div class="container">
+        <h2 class="section-title">Unit Resources</h2>
+        <div class="resource-grid">
+            
+            <a href="resources.html" class="res-card-link">
+                <div class="res-card">
+                    <div class="res-image-box">
+                        <img src="images/resources-thumb.png" alt="Cadet Resources">
+                    </div>
+                  
+                    <center>  <h3>Cadet Resources</h3> <p>Go here for uniform, badge and star level information</p></center>
+                   
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=NSht6NLAkvY" target="_blank" class="res-card-link">
+                <div class="res-card">
+                    <div class="res-image-box">
+                        <img src="images/youtube-thumb.png" alt="YouTube Channel">
+                    </div>
+                    <center><h3>YouTube Channel</h3>
+                    <p>Watch our unit in action and see our latest training exercises.</p></center>
+                </div>
+            </a>
+
+            <a href="#calendar" class="res-card-link">
+                <div class="res-card">
+                    <div class="res-image-box">
+                        <img src="images/calendar.png" alt="Unit Calendar">
+                    </div>
+                    <center><h3>Unit Calendar</h3>
+                    <p>Upcoming  events</p><center?>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+<br> 
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/NSht6NLAkvY" 
+        style="max-width: 100%; border:none; border-radius: 8px;"
+        title="2379 Burlington Army Cadets" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
 </div>
-    </div>
-</section>
-</section>
-
-<section class="dr-intro-section">
+   
+ <section id="partners" class="partner-section-premium">
     <div class="container">
-        <div class="dr-card-horizontal glass-card">
-            <div class="dr-image-wrap">
-                <img src="images/doctor.jpg" alt="Dr. Jozwik" class="dr-portrait">
+        <header class="partner-header-premium">
+            <span class="eyebrow-tactical">Our Strategic Alliance</span>
+            <h2>Proudly Supported By</h2>
+            <div class="header-accent"></div>
+            <p>Directly enabling 100% free youth leadership training through local generosity.</p>
+        </header>
+   <div class="minimal-grid primary-logos">
+            <div class="logo-card-premium">
+                <img src="images/legion.png" alt="Royal Canadian Legion">
             </div>
-            <div class="dr-text-wrap">
-                <span class="brand-sub">Lead Optometrist</span>
-                <h2>Dr. Len Jozwik, <span class="credentials">OD</span></h2>
-                <p>
-                    Dr. Len Jozwik graduated in 1983 from the University of Waterloo with a Doctorate in Optometry. 
-                    With over 15 years of focused clinical excellence in the Newmarket community, he specializes in 
-                    advanced ocular pathology and personalized vision therapy, ensuring a legacy of precision and care.
-                </p>
+            <div class="logo-card-premium">
+                <img src="images/royal.png" alt="RHLI">
             </div>
+            <div class="logo-card-premium"><img src="images/Squires.png" alt="Squires"></div></div>
         </div>
-    </div>
-</section>
 
-<section class="services-advanced" id="services">
     <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Clinical Excellence</h2>
-            <p class="section-description">Utilizing the most advanced diagnostic technology for your vision health.</p>
-        </div> 
-        
-        <div class="bento-grid">
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Senior.jpg');"></div>
-                <div class="card-content">
-                    <span class="card-tag">OHIP ELIGIBLE</span>
-                    <h3>Senior Eye Care</h3>
-                    <p>Seniors aged 65 +: An annual, full comprehensive eye examination plus any follow-up assessments that may be required are fully covered by OHIP.</p>
-                </div>
-            </div>
+        <header class="partner-header-minimal">
+            <span class="eyebrow-tactical">Strategic Partners</span>
+            <h2>Supported By</h2>
+            <div class="header-accent"></div>
+        </header>
 
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Emergency.jpg');"></div>
-                <div class="card-content">
-                    <div class="emergency-header">
-                        <span class="emergency-icon">!</span>
-                        <h3>Emergency Care</h3>
-                    </div>
-                    <p>If you experience loss of vision, double vision, swelling, infection or any eye emergency, contact us immediately for guidance.</p>
-                </div>
-            </div>
-
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Fundus.jpg'); background-size: contain;"></div>
-                <div class="card-content">
-                    <span class="card-tag">DIAGNOSTICS</span>
-                    <h3>Fundus Imaging</h3>
-                    <p>A digital fundus camera is used to take an image of the fundus the back portion of the eye that includes the retina, macula, fovea, optic disc and posterior pole. The resulting image can then be  used  by the Optometrist for diagnosis and treatment.</p>
-                </div>
-            </div>
-
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Comprehensive.jpg');"></div>
-                <div class="card-content">
-                    <span class="card-tag">CORE CARE</span>
-                    <h3>Comprehensive Eye Exams</h3>
-                    <p>The only way to diagnose diabetic retinopathy is to have a dilated eye exam.  For this test, we will place drops in your eyes to widen, or dilate,  your pupils. Dilating your pupils helps your Optometrist to see inside  your eyes more easily and inspect for damage caused by retinopathy.</p>
-                </div>
-            </div>
-
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Diabetic.jpg');"></div>
-                <div class="card-content">
-                    <span class="card-tag">MEDICAL</span>
-                    <h3>Diabetic Care</h3>
-                    <p>The only way to diagnose diabetic retinopathy is to have a dilated eye exam.  For this test, we will place drops in your eyes to widen, or dilate,  your pupils.
-Dilating your pupils helps your Optometrist to see inside  your eyes more easily and inspect for damage caused by retinopathy.</p>
-                </div>
-            </div>
-
-            <div class="bento-card glass-card">
-                <div class="card-image" style="background-image: url('images/Pediatric.jpg');"></div>
-                <div class="card-content">
-                    <h3>Other Services</h3>
-                    <p>Cataract Assessment and Management, Eye See Eye Learn Program and Children's Vision,Macular Assessment and Management,Vision Testing For Driver's License,Vision Testing For Police Forces</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="other-services-bar">
-            <span class="bar-label">SPECIALIZED TESTING:</span>
-            <p>Driver's Testing • Police Assessments • Myopia Control • Dry Eye Therapy</p>
+        <div class="minimal-grid secondary-logos">
+            <div class="logo-card-standard"><img src="images/farmboy.png" alt="Farm Boy"></div>
+            <div class="logo-card-standard"><img src="images/md.png" alt="McDonalds"></div>
+            <div class="logo-card-standard"><img src="images/Lions.jpg" alt="Burlington Lions"></div>
+            <div class="logo-card-standard"><img src="images/bretonne_logo.png" alt="Bretonne Bakery"></div>
+            <div class="logo-card-standard"><img src="images/Burlington.png" alt="Burlington Helping"></div>
+            <div class="logo-card-standard"><img src="images/pets.png" alt="Pets N Groom"></div>
         </div>
     </div>
+
 </section>
 
-<section class="trends-section" id="trends">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">What's Trending in Optometry</h2>
-            <p class="section-description">Proactive eye care initiatives tailored to seasonal health needs.</p>
-        </div>
-        <div class="calendar-bento">
-            <div class="month-nav-card glass-card">
-                <div class="nav-header">
-                    <center><span class="year">2026</span></center>
-                    <div class="scroll-indicators">
-                        <span class="dot"></span><span class="dot"></span>
-                    </div>
-                </div>
-                <div class="month-grid">
-                    <button class="month-btn active" data-month="january">Jan</button>
-                    <button class="month-btn" data-month="february">Feb</button>
-                    <button class="month-btn" data-month="march">Mar</button>
-                    <button class="month-btn" data-month="april">Apr</button>
-                    <button class="month-btn" data-month="may">May</button>
-                    <button class="month-btn" data-month="june">Jun</button>
-                    <button class="month-btn" data-month="july">Jul</button>
-                    <button class="month-btn" data-month="august">Aug</button>
-                    <button class="month-btn" data-month="september">Sep</button>
-                    <button class="month-btn" data-month="october">Oct</button>
-                    <button class="month-btn" data-month="november">Nov</button>
-                    <button class="month-btn" data-month="december">Dec</button>
-                </div>
-            </div>
-
-            <div class="focus-display-card glass-card" id="focus-display">
-                <div class="display-content">
-                    <span class="month-label" id="active-month-label">JANUARY</span>
-                    <p id="focus-description">Early detection through advanced pressure mapping is vital for this "silent" condition.</p>
-                    <h3 id="focus-title">Glaucoma Awareness</h3>
-                    <a href="#contact" class="btn-text">Schedule Screening &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact-section" id="contact">
-    <div class="container">
-        <div class="contact-unified-card">
-            <div class="contact-header">
-                <span class="brand-sub">APPOINTMENT REQUEST</span>
-                <h2>Visit Main St. Optometry</h2>
-                <div class="header-info-strip">
-                    <span>📍 19 Main St. S., Newmarket</span>
-                    <span class="divider">|</span>
-                    <span>📞 (905) 898-5245</span>
-                </div>
-            </div>
-
-            <form class="unified-form">
-                <div class="form-row">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                </div>
-                <input type="email" placeholder="Email Address" required>
-                <textarea rows="4" placeholder="How can our doctors help you today?"></textarea>
-                <button type="submit" class="btn-submit-unified">Confirm Request &rarr;</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
-
 </html>
+
+<!--/* 1. The Small Glowing Top Accent */
+.header-accent-tactical {
+    width: 40px;
+    height: 2px;
+    background: var(--cadet-green);
+    margin: 0 auto 15px;
+    box-shadow: 0 0 10px var(--cadet-green); /* HUD Glow Effect */
+}
+
+/* 2. The Eyebrow Text */
+.eyebrow {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cadet-green);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 3. The Glitch Title (Operational Portal) */
+.glitch-title-v2 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: var(--surface-white);
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* The hollow/stroked effect for the word "Portal" */
+.glitch-title-v2 span {
+    color: var(--cadet-green);
+    -webkit-text-stroke: 1px var(--cadet-green);
+    background: none;
+    text-shadow: 0 0 15px rgba(27, 127, 116, 0.3);
+}
+
+/* 4. The Tactical Separator (Line-Dot-Line) */
+.header-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    opacity: 0.6;
+}
+
+.header-separator .line {
+    width: 80px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--surface-white), transparent);
+}
+
+.header-separator .dot {
+    width: 4px;
+    height: 4px;
+    background: var(--cadet-green);
+    transform: rotate(45deg); /* Turns square into tactical diamond */
+    box-shadow: 0 0 5px var(--cadet-green);
+}
